@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contatos</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
+<body>
+    <div class="conteinerAll">
+        <div class="msg">
+            <div class="msgcard">
+                <div id="mensagem" class="message"></div>
+            </div>
+            
+        </div>
+        <!---------------------------------Inicio do Forms----------------------------------------->
+        <div class="container">
+            <div class="cont">
+                <h1>Cadastro de Contatos</h1>
+                <form id="cadastroContato">
+                    <label class="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label class="cpf">CPF:</label><br>
+                    <input type="text" id="cpf" name="cpf" required><br><br>
+
+                    <label class="dataNascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+
+                    <label class="endereco">Endereço:</label><br>
+                    <input type="text" id="endereco" name="endereco" required><br><br>
+
+                    <button type="submit">Cadastrar</button>
+                    <button type="button" id="exibirContatosBtn">Exibir Contatos</button>
+                    <button type="button" id="buscarContatoBtn">Buscar Contato</button>
+                    <button type="button" id="removerContatoBtn">Remover Contato</button>
+                </form>
+            </div>
+        </div>
+        <!------------------------------------Resultados abaixo-------------------------------------->
+        <div class="container-cards">
+            <div class="content-cards">
+                <div class="cards-container" id="listaContatos"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
